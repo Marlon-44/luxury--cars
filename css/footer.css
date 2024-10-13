@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    font-family: "montserrat", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+/* Estilo de cada sección del footer */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de las redes sociales */
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    /* Hace que los íconos de las redes sociales sean blancos */
+}
+
+/* Estilo de la parte inferior del footer */
+.footer-bottom {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}

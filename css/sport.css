@@ -1,0 +1,294 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow: auto;
+}
+.container{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+#home-video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#home-video2{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+ul.header-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+ul.header-list li{
+    float: left;
+}
+ul.header-list li a, .drop-tbn{
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.header-list li a:hover, .drop-btn:hover .drop-tbn{
+    color: #fff;
+
+}
+
+ul.header-list li.dropdown{
+    display: inline-block;
+}
+
+ul.header-list .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} 
+ul.header-list .dropdown-content li{
+    float: none;
+    padding: 12px 16px;
+    color: #fff;
+}
+ul.header-list .dropdown-content li a{
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    color: #fff;
+}
+ul.header-list .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+main .main-div{
+    position: relative;
+    left: -100%;
+    animation: moverDesdeIzquierda 2s ease-out forwards;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    margin-left: 60px;
+    margin-top: 0;
+    gap:30px;
+    justify-content: end;
+    
+
+}
+@keyframes moverDesdeIzquierda {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: -50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+main .main-div div h1{
+    color: #ffffffc9;
+    font-family: "montserrat", sans-serif;
+    font-size: 9.37em;
+}
+main .main-div div .tittle--medium{
+    font-size: 6em;
+}
+main .main-div div img{
+    max-width: 180px;
+    margin: 0;
+    padding: 0;
+}
+main .main-div div{
+    display: flex;
+}
+.main-div h2{
+    color: #ffffffc9;
+    font-weight: 400;
+    margin-top: 0;
+    font-family: 'montserrat', sans-serif;
+    padding-bottom: 30px;
+}
+
+.gallery-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 30px
+}
+
+.gallery-row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.gallery-row--light{
+    
+    background-color: #ffffff;
+}
+.gallery-row--right{
+    align-self: end;
+}
+
+
+.gallery-row .details{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: #ffffff;
+    width: 50%;
+    margin: 0px 100px;
+    font-family: "montserrat", sans-serif;
+    text-align: left;
+}
+
+
+.gallery-row img{
+    width: 35%;
+    padding: 0;
+    height: 100%;
+    
+}
+
+.details h2{
+
+    font-size: 3em;
+    margin: 0;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 50px;
+    color: #fff;
+    box-sizing: border-box;
+    
+}
+.information h2{
+    font-size: 4em;
+}
+.information p{
+    box-sizing: border-box;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.flag{
+    display: flex;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.flag .flag-color{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.flag-color h2{
+    font-size: 10em;
+    color: #ffffffd7;
+}
+
+.blue{
+    background-color: #80c3ff ;
+}
+.red{
+    background-color: #e7202d ;
+}
+.dark-blue{
+    background-color: #15578d;
+}
+.contact-box{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    margin: 50px;
+    color: #000;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.contact h2{
+    font-size: 4em;
+    align-self: center;
+}
+.contact p{
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+.contact a{
+    width: 200px;
+    align-self: center;
+    padding: 20px 100px;
+    background-color: #15578d;
+    text-align: center;
+    text-decoration: none;
+    font-family: "montserrat", sans-serif;
+    color: #fff;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+.contact a:hover{
+    background-color: #0d3e67 ;
+}
+.logo-box{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.contact-box img{
+    max-width: 600px;
+    object-fit: cover;
+}
+::-webkit-scrollbar {
+    width: 8px; /* Ajusta el ancho de la barra de desplazamiento */
+}
+
+/* Estilo del contenedor del scrollbar (fondo) */
+::-webkit-scrollbar-track {
+    background: transparent; /* Lo hace transparente */
+}
+
+/* Estilo de la barra que se mueve (scroll thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Cambia el color de la barra que se mueve */
+    border-radius: 10px; /* Redondea los bordes de la barra */
+}
+
+/* Opcional: cambia el color de la barra al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #cacaca;
+}
